@@ -1,4 +1,5 @@
 #/bin/bash
+clear
 
 FILE_NOT_FOUND_EXIT_CODE=0
 FILE_FOUND_EXIT_CODE=1
@@ -25,7 +26,6 @@ echo "Procurando o texto $2 no arquivo $FILE_NAME. Arquivo do tipo $(eval $COMMA
 # "/dev/null" não deixar retornar nada no terminal após algum comando shell
 grep $2 $FILE_NAME > /dev/null
 EXIT_CODE=$?
-
 
 if [ $EXIT_CODE -eq $EXIT_CODE_PASS ]
 then
